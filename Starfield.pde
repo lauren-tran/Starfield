@@ -54,13 +54,11 @@ class OddballParticle implements Particle
   {
     myX = 0;
     myY = 250;
-    myAngle = Math.random()*2*Math.PI;
-    mySpeed = Math.random()*10;
     myColor = color((int)(Math.random()*256),(int)(Math.random()*256), (int)(Math.random()*256)); 
   }
   public void move()
   {
-    myX = myX + Math.cos(myAngle)*mySpeed;
+    myX = myX + (int)(Math.random()*10);
   }
   public void show()
   {
